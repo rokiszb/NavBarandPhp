@@ -1,0 +1,154 @@
+* {
+    margin: 5px 0;
+}
+
+html {
+    font-family: 'Bitter', serif;
+}
+
+body {
+    background: white;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background: black;
+}
+
+.main-nav {
+    background: black;
+    display: flex;
+    font-family: 'Bitter', serif;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+}
+
+li a {
+    text-decoration: none;
+    color:white;
+}
+
+li, li a {
+    cursor: pointer;
+    flex-basis: 100px;
+    transition: 0.2s;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+li:nth-child(4) {
+    margin-left: auto;
+}
+
+li:hover, li a:hover {
+    color: darkgray;
+}
+
+
+/* mobilkai pakeitimai nuo 520 px plocio rezoliucijos*/
+
+@media all and (max-width: 520px) {
+    body {
+        background: white;
+        width: 100%;
+    }
+    nav>.main-nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    nav>.main-nav>* {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: auto;
+        align-items: center;
+    }
+    li:nth-child(4) {
+        margin-left: ;
+    }
+    .main-nav>li {
+        padding: 10px 0;
+        background-color: black;
+        width: 520px;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px white solid;
+    }
+    nav {
+        width: 100%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .main-nav {
+        width: 100%;
+    }
+    * {
+        padding: 0;
+    }
+}
+
+.box {
+        width: 70%;
+    margin:auto;
+    height: 400px;
+}
+
+form {
+    display: flex;
+    background-color: white;
+    width: 70%;
+    flex-direction: column;
+
+
+   
+}
+
+.dezute {
+
+        height: 400px;
+    display: flex;
+    width: 100%;
+border: 1px black solid;
+    
+}
+
+
+
+button {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Bitter', serif;
+    transition-duration: 0.4s;
+    border:2px black solid;
+
+   
+}
+
+button:hover {
+    background-color: white; /* Green */
+    color: black;
+    
+}
+
+input {
+    font-size: 16px;
+    font-family: 'Bitter', serif;   
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+
